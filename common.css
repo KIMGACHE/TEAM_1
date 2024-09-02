@@ -4,7 +4,7 @@
 
 a {
     text-decoration: none;
-    color: black;
+    color: black; 
 }
 
 ul {
@@ -14,8 +14,9 @@ ul {
 }
 
 .layout {
-    width: 1500px;
+    width: 83.333vw;
     margin: 0 auto;
+
 }
 
 .top-header {
@@ -30,7 +31,7 @@ body {
 .top-header {
     border-bottom: 1px solid;
     position: relative;
-    
+
 }
 
 .top-header-left>ul {
@@ -90,14 +91,13 @@ body {
 .submenubtn>li {
     font-size: 1.6rem;
     display: none;
-    
+
 }
 
 
 .mainmenu:hover .submenubtn>li {
     display: block;
 }
-
 
 .banner {
 
@@ -125,21 +125,32 @@ body {
     margin: 50px 0 50px;
 }
 
-footer {
+.footer-block {
+    width:100%;
     background-color: black;
-    opacity : 0.9;
+    opacity: 0.9;
     position: relative;
+    height: 200px;
+    display:flex;
+    color: white;
+    
 }
 
-footer>div {
-    color :white;
-
+.footer-left {
+    padding : 15px;
 }
 
 .footer-right {
-    
-    position: absolute;
-    right:500px;
-    top: 0;
- 
+    width:45%;
+    display:flex;
+    justify-content: right;
+    align-items: start;
+    padding-top : 15px;
 }
+
+.footer-bottom {
+    position: absolute;
+    left : 15px;
+    bottom: 5px;
+}
+
