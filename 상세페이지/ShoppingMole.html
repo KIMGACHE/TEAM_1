@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./specify.css" />
+    <link rel="stylesheet" href="./specify2.css" media="all and (max-width:1500px)"/>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="top-header layout">
+          <div class="top-header-left">
+            <ul>
+              <li>
+                <a href="">
+                  <img src="./images/LOGO.png" alt="LOGO" />
+                </a>
+              </li>
+              <li><a href="">로그인</a></li>
+              <li><a href="">회원가입</a></li>
+            </ul>
+          </div>
+
+          <div class="top-header-middle">
+            <a href="#">정처 쇼핑</a>
+          </div>
+
+          <div class="top-header-right">
+            <ul>
+              <li>
+                <a href="">
+                  <img src="./images/Vector.png" alt="찾기" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./images/Vector2.png" alt="장바구니" />
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  <img src="./images/User.png" alt="마이페이지" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav>
+          <div>
+            <ul class="mainmenu">
+              <li>
+                <a href="">Outer</a>
+                <ul class="submenubtn">
+                  <li><a href="">Coat</a></li>
+                  <li><a href="">Jacket</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">Top</a>
+                <ul class="submenubtn">
+                  <li><a href="">Tee</a></li>
+                  <li><a href="">Shirt</a></li>
+                  <li><a href="">Knit</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">Bottom</a>
+                <ul class="submenubtn">
+                  <li><a href="">Pants</a></li>
+                  <li><a href="">Denim</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">Shoes</a>
+                <ul class="submenubtn">
+                  <li><a href="">Sneakers</a></li>
+                  <li><a href="">Loafer</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="">ACC</a>
+                <ul class="submenubtn"></ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <main class="layout">
+        <section>
+          <div class="product layout">
+            <div class="p_img">
+              <img
+                src="https://cafe24.poxo.com/ec01/shyness0728/PqYAeXr9cC3ewV7j5+hciyNZGyxGxOcI5JQLYg8DJjzSxWF6/zupprXvWZJi83tISE+0VkWPzXB1VR1WnT5FNQ==/_/web/product/big/202404/80b2500b65deb8c74517b13c4edb167e.gif"
+                alt=""
+              />
+            </div>
+            <div class="info">
+              <div class="p_title">스퀘어 패치자수 티셔츠</div>
+              <div class="desc">
+                빈티지한 프린팅이 매력적인 반팔티였습니다! <br />
+                소프트한 고밀도 20수 코튼 원사로 제작되어 <br />
+                터치감도 우수하며 후가공 처리로 <br />
+                수축 및 변형을 최소화 하여 제작된 티셔츠입니다.
+              </div>
+              <div class="p_price">
+                <span>판매가:</span>
+                <span style="font-weight:600;">29,900원</span>
+              </div>
+              <div class="p_trans">
+                <span>배송비:</span>
+                <span>3,000원(100,000원 이상 구매 시 무료)</span>
+              </div>
+              <div class="p_option">
+                <label for="sc">SIZE-COLOR</label>
+                <select name="size_color" id="sc">
+                  <option value="none" selected>
+                    -[필수]옵션을 선택해주세요-
+                  </option>
+                  <option value="category" style="font-weight: 600">
+                    SIZE-COLOR:
+                  </option>
+                  <option value="fw">FREE-화이트</option>
+                  <option value="fb">FREE-백멜란지</option>
+                  <option value="fw">FREE-네이비</option>
+                  <option value="fl">FREE-블랙 (+10,000)</option>
+                </select>
+              </div>
+              <div class="p_qty">
+                <span>수량:</span>
+                <div>
+                  <span id="qty">0개</span>
+                  <button id="btnUp">⬆</button>
+                  <button id="btnDown">⬇</button>
+                </div>
+              </div>
+              <div class="tot_price">
+                <span>총 상품금액</span>
+                <div>
+                    <span id="t_price">0원</span>
+                    <span style="font-size: 0.6rem; font-weight:400;" id="t_qty">(0개)</span>
+                </div>
+              </div>
+              <div class="buy">
+                <div class="p_buy">Buy It Now</div>
+                <div class="p_add">Add To Cart</div>
+                <div class="p_like">♥</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="menu">
+            <ul>
+              <li><a href="javascript:void(0)">상품상세정보</a></li>
+              <li><a href="javascript:void(0)">쇼핑가이드</a></li>
+              <li><a href="javascript:void(0)">관련상품</a></li>
+              <li><a href="javascript:void(0)">사용리뷰</a></li>
+              <li><a href="javascript:void(0)">Q&A</a></li>
+            </ul>
+          </div>
+          <div class="specify">
+            <img src="https://cafe24.poxo.com/ec01/shyness0728/PqYAeXr9cC3ewV7j5+hciyNZGyxGxOcI5JQLYg8DJjzSxWF6/zupprXvWZJi83tISE+0VkWPzXB1VR1WnT5FNQ==/_/web/upload/NNEditor/20240423/99327d1d44faf37a482d1db8bf8c884c.jpg" alt="">
+            <img src="https://cafe24.poxo.com/ec01/shyness0728/PqYAeXr9cC3ewV7j5+hciyNZGyxGxOcI5JQLYg8DJjzSxWF6/zupprXvWZJi83tISE+0VkWPzXB1VR1WnT5FNQ==/_/web/upload/NNEditor/20240423/056cc3f30c40534ea23efea0d3a42c4e.jpg" alt="">
+            <img src="https://cafe24.poxo.com/ec01/shyness0728/PqYAeXr9cC3ewV7j5+hciyNZGyxGxOcI5JQLYg8DJjzSxWF6/zupprXvWZJi83tISE+0VkWPzXB1VR1WnT5FNQ==/_/web/upload/NNEditor/20240423/89adfdb0ce2c6a11ba6604de48437a4d.jpg" alt="">
+            <img src="https://cafe24.poxo.com/ec01/shyness0728/PqYAeXr9cC3ewV7j5+hciyNZGyxGxOcI5JQLYg8DJjzSxWF6/zupprXvWZJi83tISE+0VkWPzXB1VR1WnT5FNQ==/_/web/upload/NNEditor/20240423/663bcfb90c7db5b7912fd79c9ac1bec6.jpg" alt="">
+            <img src="https://cafe24.poxo.com/ec01/shyness0728/PqYAeXr9cC3ewV7j5+hciyNZGyxGxOcI5JQLYg8DJjzSxWF6/zupprXvWZJi83tISE+0VkWPzXB1VR1WnT5FNQ==/_/web/upload/NNEditor/20240423/2749474083e35a9235702a816c66b594.jpg" alt="">
+            <img src="https://cafe24.poxo.com/ec01/shyness0728/PqYAeXr9cC3ewV7j5+hciyNZGyxGxOcI5JQLYg8DJjzSxWF6/zupprXvWZJi83tISE+0VkWPzXB1VR1WnT5FNQ==/_/web/upload/NNEditor/20240423/7a83c1fa256c72dbef36ebfc0067fa53.jpg" alt="">
+            <img src="https://cafe24.poxo.com/ec01/shyness0728/PqYAeXr9cC3ewV7j5+hciyNZGyxGxOcI5JQLYg8DJjzSxWF6/zupprXvWZJi83tISE+0VkWPzXB1VR1WnT5FNQ==/_/web/upload/NNEditor/20240423/a4169bd72b2674a35e9b82bf06522c41.jpg" alt="">
+            <img src="https://cafe24.poxo.com/ec01/shyness0728/PqYAeXr9cC3ewV7j5+hciyNZGyxGxOcI5JQLYg8DJjzSxWF6/zupprXvWZJi83tISE+0VkWPzXB1VR1WnT5FNQ==/_/web/upload/NNEditor/20240423/de7d8d5e4841288c859b11973b35f03c.jpg" alt="">
+            <img src="https://cafe24.poxo.com/ec01/shyness0728/PqYAeXr9cC3ewV7j5+hciyNZGyxGxOcI5JQLYg8DJjzSxWF6/zupprXvWZJi83tISE+0VkWPzXB1VR1WnT5FNQ==/_/web/upload/NNEditor/20240423/68b00e96d5a511fd49465480a9d18e39.jpg" alt="">
+            <img src="https://cafe24.poxo.com/ec01/shyness0728/PqYAeXr9cC3ewV7j5+hciyNZGyxGxOcI5JQLYg8DJjzSxWF6/zupprXvWZJi83tISE+0VkWPzXB1VR1WnT5FNQ==/_/web/upload/NNEditor/20240423/cb00f927f3fc6008778e3c224fbce7cf.jpg" alt="">
+          </div>
+        </section>
+      </main>
+      <footer class="layout">
+        <div class="footer-left">
+          <ul>
+            <li>상호명 : 주식회사 정처 쇼핑</li>
+            <li>대표: 길동이</li>
+            <li>전화 : 1577-15xx</li>
+            <li>주소 : 대구광역시 중구 중앙대로 366 9층, 10층</li>
+            <li>사업자 등록 번호 : 578-88-xxxxx</li>
+            <li></li>
+          </ul>
+        </div>
+
+        <div class="footer-right">
+          <ul>
+            <li>Bank Account</li>
+            <li>국민은행 : 6567-01-xxxxxx</li>
+            <li>카카오뱅크 : 3495-293-xxxxxx</li>
+            <li>농협은행 : 508-11-20xxxxxxx</li>
+            <li></li>
+            <li>예금주 : 길동이(정처쇼핑)</li>
+          </ul>
+        </div>
+        <div class="footer-bottom">
+          <h4>Copyright ⓒ 2024.정처쇼핑 Inc. All rights reserved.</h4>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const qty = document.getElementById('qty');
+      const upBtn = document.getElementById('btnUp');
+      const downBtn = document.getElementById('btnDown');
+      const t_qty = document.getElementById('t_qty');
+      const t_price = document.getElementById('t_price');
+
+      let count=0;
+      upBtn.addEventListener('click',()=>{
+        const sizeColor = document.getElementsByName('size_color');
+        if(sizeColor[0].value!=='none'&& sizeColor[0].value!=='category'){
+          count++;
+          qty.innerHTML=`${count}개`;
+          t_qty.innerHTML=`(${count}개)`;
+          t_price.innerHTML=`${totalPrice(sizeColor[0].value, count)}원`;
+        }
+      })
+      downBtn.addEventListener('click',()=>{
+        const sizeColor = document.getElementsByName('size_color');
+        if(sizeColor[0].value!=='none'&& sizeColor[0].value!=='category'){
+          if(count!=0){
+            count--;
+            qty.innerHTML=`${count}개`;
+            t_qty.innerHTML=`(${count}개)`;
+            t_price.innerHTML=`${totalPrice(sizeColor[0].value, count)}원`;
+          }
+        }
+      })
+
+      function totalPrice(value) {
+        if(value==='fw' || value==='fb' || value==='fw') {
+          return 29000*count;
+        } else if(value==='fl'){
+          return 39000*count;
+        }
+      }
+
+
+    </script>
+  </body>
+</html>
