@@ -26,6 +26,10 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
         defer></script>
 
+    <!-- 검색창 관련 -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/bootstrap.css">
@@ -43,7 +47,7 @@
             <div class="top-header layout">
                 <div class="top-header-left">
                     <ul>
-                        
+
                         <li><a href="btn" class="logoimg" data-tooltip="category" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                                 <img src="./image/LOGO.png" alt="LOGO">
@@ -54,19 +58,19 @@
 
                         <!-- 왼쪽 사이드바 오프캔버스 -->
                         <li>
-                            <span class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
                                 aria-labelledby="offcanvasExampleLabel">
-                                <span class="offcanvas-header p-0 pe-3 pt-3">
+                                <div class="offcanvas-header p-0 pe-3 pt-3">
 
                                     <button type="button" class="btn-close text-reset ;" data-bs-dismiss="offcanvas"
                                         aria-label="Close"></button>
-                                </span>
-                                <span class="offcanvas-body p-0 pe-3 ps-3">
-                                    <p class="offcanvas-title pb-5 mb-5" id="offcanvasExampleLabel">
-                                        <b style="font-size: 1rem;">로그인</b>
-                                        을 하시면 <br>
+                                </div>
+                                <div class="offcanvas-body p-0 pe-3 ps-3">
+                                    <div class="offcanvas-title pb-5 mb-5" id="offcanvasExampleLabel">
+                                        <div style="font-size: 1rem; font-weight:900;">로그인</div>
+                                        을 하시면
                                         다양하고 특별한 혜택을 이용할 수 있습니다.
-                                    </p>
+                                    </div>
 
                                     <ul class="offcanvas-body-sign mt-3">
                                         <li><a href="" class="offcanvas-body-login">로그인</a></li>
@@ -208,10 +212,10 @@
 
                                     </ul>
 
-                                </span>
+                                </div>
 
 
-                            </span>
+                            </div>
                         </li>
 
                     </ul>
@@ -224,88 +228,98 @@
                 <div class="top-header-right">
                     <ul>
 
-                        <li><a href="">
+                        <li class="search-box">
+                            <!-- <a href="">
                                 <img class="right-icon" src="./image/icon_search.png" alt="찾기">
-                            </a></li>
+                            </a> -->
+                            <form class="search-form" action="." method="post">
+                                <input class="search-txt" type="text" placeholder="검색어를 입력해 주세요">
+                                <button class="search-btn">
+                                    <img class="right-icon" src="./image/icon_search.png" alt="찾기">
+                                </button>
+                            </form>
+
+                        </li>
                         <li class="mediaquery"><a href="">
                                 <img class="right-icon" src="./image/icon_cart.png" alt="장바구니">
                             </a></li>
                         <li class="mediaquery"><a href="">
                                 <img class="right-icon" src="./image/icon_user.png" alt="마이페이지">
                             </a></li>
-
-                        <button class="btn mideaquery-btn p-0" type="button" data-bs-toggle="offcanvas"
-                           data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                           <span class="material-symbols-outlined p-0 mt-1">
-                            menu
-                            </span>
-                        </button>
-
-                        <span class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                            aria-labelledby="offcanvasRightLabel">
-                            <span class="offcanvas-header">
-
-                                <div>
-                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                                        aria-label="Close"></button>
-                                </div>
-                            </span>
-
-
-                            <span class="offcanvas-body">
-
-                                <h2 style="display:block">MYPAGE</h2>
-                                <ul class="rightoffcanvas-mypage">
-                                    <li class="cart">
-                                        <a href="">
-                                            <span class="material-symbols-outlined">
-                                                shopping_cart
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="list-alt">
-                                        <a href="">
-                                            <span class="material-symbols-outlined">
-                                                list_alt
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="cancel">
-                                        <a href="">
-                                            <span class="material-symbols-outlined">
-                                                low_priority
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="person">
-                                        <a href="">
-                                            <span class="material-symbols-outlined">
-                                                person
-                                            </span>
-                                        </a>
-                                    </li>
-                                    <li class="search">
-                                        <a href="">
-                                            <span class="material-symbols-outlined">
-                                                search
-                                            </span>
-                                        </a>
-                                    </li>
-
-                                </ul>
-                                <ul>
-                                    <h2>Today View</h2>
-                                    <li class="d-grid mt-4">
-                                        <a href="" class="btn btn-secondary">
-                                            <span>
-                                                최근 본 상품
-                                            </span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </span>
-                        </span>
+                        <li>
+                            <button class="btn mideaquery-btn p-0" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <span class="material-symbols-outlined p-0 mt-1">
+                                    menu
+                                </span>
+                            </button>
+                        </li>
                     </ul>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <div>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+
+
+
+                        <div class="offcanvas-body">
+
+                            <h2 style="display:block">MYPAGE</h2>
+                            <ul class="rightoffcanvas-mypage">
+                                <li class="cart">
+                                    <a href="">
+                                        <div class="material-symbols-outlined">
+                                            shopping_cart
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="list-alt">
+                                    <a href="">
+                                        <div class="material-symbols-outlined">
+                                            list_alt
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="cancel">
+                                    <a href="">
+                                        <div class="material-symbols-outlined">
+                                            low_priority
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="person">
+                                    <a href="">
+                                        <div class="material-symbols-outlined">
+                                            person
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="search">
+                                    <a href="">
+                                        <div class="material-symbols-outlined">
+                                            search
+                                        </div>
+                                    </a>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li class="d-grid mt-4">
+                                    <div style="font-size:1.5rem; font-weight:900">Today View</div>
+                                    <a href="" class="btn btn-secondary mt-4">
+                                        <div>
+                                            최근 본 상품
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
 
 
                 </div>
@@ -357,21 +371,21 @@
 
         </header>
         <main>
-            <section class="banner">
+            <div class="banner">
                 <img src="./image/banner.png" alt="banner">
-            </section>
-            <section class="layout">
+            </div>
+            <div class="layout">
                 <div class="imageline">
-                    <span><img src="./image/main1.png" alt=""></span>
-                    <span><img src="./image/main2.png" alt=""></span>
-                    <span><img src="./image/main3.png" alt=""></span>
-
-                    <span><img src="./image/main4.png" alt=""></span>
-                    <span><img src="./image/main5.png" alt=""></span>
-                    <span><img src="./image/main6.png" alt=""></span>
+                    <span><a href=""><img src="./image/main1.png" alt=""></a></span>
+                    <span><a href=""><img src="./image/main2.png" alt=""></a></span>
+                    <span><a href=""><img src="./image/main3.png" alt=""></a></span>
+                    <span><a href=""><img src="./image/main4.png" alt=""></a></span>
+                    <span><a href=""><img src="./image/main5.png" alt=""></a></span>
+                    <span><a href=""><img src="./image/main6.png" alt=""></a></span>
+                    
                 </div>
 
-            </section>
+            </div>
 
         </main>
         <footer>
@@ -404,6 +418,26 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        //검색창 이미지에 마우스 올리면 검색창 표시하고 내리면
+        // 검색창 숨기기
+        const searchtxt = document.querySelector('.search-txt');
+        const searchbtn = document.querySelector('.search-btn');
+        const searchform = document.querySelector('.search-form');
+
+        searchbtn.addEventListener('mouseover', function () {
+            searchtxt.style.visibility = 'visible';
+            searchtxt.style.opacity = '1';
+        })
+
+        searchform.addEventListener('mouseleave', function () {
+            searchtxt.style.visibility = 'hidden';
+            searchtxt.style.opacity = '0';
+            searchtxt.value = "";
+        })
+
+    </script>
 
 </body>
 
